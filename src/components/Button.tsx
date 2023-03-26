@@ -1,12 +1,15 @@
-import { ButtonContainer, ButtonVariant } from "./Button.styles"
+import { ReactNode } from 'react'
+import { ButtonContainer, ButtonVariant } from './Button.styles'
 
 interface ButtonProps {
-    variant?: ButtonVariant
-    children: React.ReactNode
+  variant?: ButtonVariant
+  children: ReactNode
 }
 
 export function Button(props: ButtonProps) {
-    return (
-        <ButtonContainer variant={props.variant || 'primary'}>{props.children}</ButtonContainer>
-    )
+  return (
+    <ButtonContainer variant={props.variant || 'primary'}>
+      {props.children}
+    </ButtonContainer>
+  )
 }
