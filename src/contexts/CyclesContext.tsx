@@ -35,7 +35,6 @@ interface CyclesContextProviderProps {
 interface CyclesState {
   cycles: Cycle[]
   activeCycleId: string | null
-  amountSecondsPassed: number
 }
 
 export function CyclesContextProvider({
@@ -81,7 +80,7 @@ export function CyclesContextProvider({
           return state
       }
     },
-    { cycles: [], activeCycleId: null, amountSecondsPassed: 0 },
+    { cycles: [], activeCycleId: null },
   )
 
   const { cycles, activeCycleId } = cyclesState
