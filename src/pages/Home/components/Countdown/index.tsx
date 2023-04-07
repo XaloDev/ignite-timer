@@ -38,7 +38,7 @@ export function Countdown() {
         } else {
           setAmountSecondsPassed(secondsDifference)
         }
-      }, 1000)
+      }, 100)
     }
 
     return () => clearInterval(interval)
